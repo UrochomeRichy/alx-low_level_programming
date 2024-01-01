@@ -1,12 +1,10 @@
 #include <stdio.h>
-/*
- * main - A program that prints the puts function
- *
- * Return: 0 (Success)
+/**
+ *  main - entry pont into the program and returns an integer and no parameter
+ *  Return:0 (success)
  */
-
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle, /n");
+	puts("\"Programming is like building a multilingual puzzle");
 	return (0);
 }
