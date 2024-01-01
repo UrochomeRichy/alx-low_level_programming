@@ -1,11 +1,10 @@
 #include <stdio.h>
-/*
- * Main - This is the entry point of the printf fuction.
- *
- * Return 0 (Success)
+/**
+ * main - this program returns an integer and has no parameter
+ * Return: 0 (success)
  */
 int main(void)
 {
-	printf("with proper grammar, but the outcome is a piece of art," \n);
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	return (0);
 }
