@@ -1,32 +1,21 @@
 #include <stdio.h>
 /**
- * main - this function takes no parameters and returns no integers
+ * main - this function takes no parameters and returns an integer
  * Return: 0 (success)
  */
 int main(void)
 {
-	int i;
-	int j;
+	int a;
 
-	i = 0;
-	j = 0;
-	for (i <= 9; ++i)
+	for (a = 0; a < 10; a++)
 	{
-		for (j <= 9; ++j)
-
+		putchar(a + '0');
+		if (a < 9)
 		{
-		if (i != 0 || j != 0)
-
-		{
-			putchar(i + '0');
 			putchar(',');
 			putchar(' ');
-			putchar(j + '0');
-			putchar(' ');
 		}
-			}
-				}
+	}
 	putchar('\n');
 	return (0);
 }
-
