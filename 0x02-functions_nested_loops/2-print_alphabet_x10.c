@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet_x10 - takes no parameters and no return value
+ * print_alphabet_x10 - this function takes no parameters and returns nothing
  * Return: void
  */
 void print_alphabet_x10(void)
@@ -8,12 +8,12 @@ void print_alphabet_x10(void)
 	char c;
 	int i;
 
-	for (i = 0; i <= 10; i++)
+	for (i = 0; i < 11; i++)
 	{
-	for (c = 'a'; c <= 'z'; c++)
+		for (c = 'a'; c <= 'z'; c++)
 		{
-	_putchar(c);
+			_putchar(c);
 		}
-	_putchar('\n');
+		_putchar('\n');
 	}
 }
