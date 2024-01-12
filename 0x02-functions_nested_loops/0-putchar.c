@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * _putchar - returns an integer and takes character parameter.
+ * main- returns an integer and takes no parameter.
  *
- * Return: 1 (success)
+ * Return: 0 (success)
  */
 int main(void)
 {
@@ -16,5 +16,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return (1);
+	return (0);
 }
