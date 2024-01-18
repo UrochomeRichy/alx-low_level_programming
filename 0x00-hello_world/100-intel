@@ -1,6 +1,2 @@
 #!/bin/bash
-if [ -z "$CFILE" ]; then
-    echo "Error: Provide the C file name in the CFILE variable."
-    exit 1
-BASENAME=$(basename "$CFILE" .c)
-gcc -S -masm=intel "$CFILE" -o "$BASENAME.s"
+gcc -S -masm=intel "$CFILE" -o "$(basename "$CFILE" .c).s"
