@@ -1,20 +1,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - this function takes no parameters and returns an integer
+ * main - this function takes no parameters and returns 0
  * Return: 0 (success)
  */
 int main(void)
 {
-	int i, j;
+	int limit = 1024;
+	int sum = 0;
 
-	for (i = 3; i < 1024; i += 3)
+	for (int i = 0; i < limit; i++)
 	{
-		for (j = 5; j < 1024; j += 5)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			putchar((j + i));
+			sum += i;
 		}
 	}
-		putchar('\n');
-		return (0);
+	printf("The sum of multiples of 3 and 5 below %d is: %d\n", limit, sum);
+	return (0);
 }
