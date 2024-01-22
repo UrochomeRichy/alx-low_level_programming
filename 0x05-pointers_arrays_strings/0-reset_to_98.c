@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * reset_to_98 - this function returns void and takes an integer array as parameter.
+ * reset_to_98 - this function returns void and takes an integer
  * @*n: integer parameter aof function reset_to_98
  * Return: void
  */
