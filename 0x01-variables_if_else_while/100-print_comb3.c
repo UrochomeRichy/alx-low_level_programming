@@ -5,24 +5,19 @@
  */
 int main(void)
 {
-	int c;
-	int j;
+	int i, j;
 
-	for (c = '0'; c <= 9; c++)
+	for (i = 0; i < 10; i++)
 	{
-		for (j = '0'; j <= 9; j++)
+		for (j = i + 1; j < 10; j++)
 		{
-			if (c < j)
+			putchar(i + '0');
+			putchar(j + '0');
+
+			if (i != 8 || j != 9)
 			{
-				putchar(c + '0');
-				putchar(j + '0');
-				{
-					if (!(c == '8' && j == '9'))
-					{
-						putchar(',');
-						putchar(' ');
-					}
-				}
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
